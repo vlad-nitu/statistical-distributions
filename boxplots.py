@@ -10,6 +10,7 @@ data3 = np.random.uniform(-2, 2, 100)
 data4 = np.random.standard_t(df = 3, size = 1000)
 data5 = np.random.normal(0, 1, size = 1000)
 data6 = np.random.binomial(10, 1/2, size = 1000)
+# Dictionary to plot each of the 6 boxplots
 map = {
     'Geo': data1,
     'Exp': data2,
