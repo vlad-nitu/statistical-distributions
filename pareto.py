@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import pareto
 x_m = 1 #scale
-alpha = [1,2,4] #list of values of shape parameters
+alpha = [1,2,4] #list of values of shape parameters -> Par(1), Par(2) and Par(4)
 samples = np.linspace(start=0, stop=5, num=1000)
 for a in alpha:
     output = np.array([pareto.pdf(x=samples, b=a, loc=0, scale=x_m)])
